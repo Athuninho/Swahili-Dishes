@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zainab Swahili Dishes</title>
+  <link rel="icon" href="view.webp" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Zainab Swahili Dishes</h1>
+      <div class="nav-link" id="nav-link">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <button id="mode-toggle" aria-label="Toggle dark/light mode">🌓</button>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home" id="home">
+      <div class="text-box">
+        <h1>Zainab Swahili Dishes</h1>
+        <p>Experience the rich flavors and culinary traditions of Swahili cuisine at Zainab Swahili Dishes. Our menu features a variety of authentic dishes made with the freshest ingredients and traditional recipes.</p>
+        <a href="#about" class="hero-btn">Learn More</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h1>About Us</h1>
+      <p>Zainab Swahili Dishes is a culinary haven dedicated to bringing the authentic flavors of Swahili cuisine to your table. Our restaurant is a celebration of the rich cultural heritage and diverse culinary traditions of the Swahili coast.</p>
+      <div class="row">
+        <div class="about-col">
+          <img src="swahili-cuisine.jpg" alt="Traditional Swahili Cuisine" />
+          <h3>Our Heritage</h3>
+          <p>We honor the legacy of Swahili cuisine, blending spices and ingredients that have been passed down through generations.</p>
+        </div>
+        <div class="about-col">
+          <img src="Chefs.webp" alt="Our Chefs" />
+          <h3>Our Chefs</h3>
+          <p>Led by our talented chefs, we create dishes that not only taste amazing but also tell a story of our culture.</p>
+        </div>
+        <div class="about-col">
+          <img src="Interior.jpg" alt="Restaurant Interior" />
+          <h3>Our Ambiance</h3>
+          <p>Step into our restaurant and immerse yourself in a warm and inviting atmosphere that reflects the essence of Swahili hospitality.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h1>Our Menu</h1>
+      <p>At Zainab Swahili Dishes, we offer a diverse menu showcasing the best of Swahili cuisine—from aromatic biryanis to flavorful curries.</p>
+      <div class="row">
+            <div class="menu-col">
+                <img src="Biriani.jpg" alt="Biriani">
+                <h3>Swahili Biriani</h3>
+                <p>A fragrant rice dish cooked with spices, meat, and vegetables.</p>
+            </div>
+            <div class="menu-col">
+                <img src="Pilau.webp" alt="Pilau">
+                <h3>Swahili Pilau</h3>
+                <p>A spiced rice dish with a blend of aromatic spices and tender meat.</p>
+            </div>
+            <div class="menu-col">
+                <img src="Sambusa.jpg" alt="Sambusa">
+                <h3>Swahili Sambusa</h3>
+                <p>Crispy pastries filled with spiced meat or vegetables.</p>
+            </div>
+            <div class="menu-col">
+                <img src="Shawarma.jpg" alt="Shawarma">
+                <h3>Swahili Shawarma</h3>
+                <p>Marinated meat wrapped in flatbread with fresh vegetables and sauces.</p>
+            </div>
+            <div class="menu-col">
+                <img src="chapati.webp" alt="Chapati">
+                <h3>Swahili Chapati</h3>
+                <p>Soft and flaky flatbreads perfect for pairing with curries.</p>
+            </div>
+                <div class="menu-col">
+                <img src="Bokoboko.jpg" alt="Bokoboko">
+                <h3>Swahili Bokoboko</h3>
+                <p>Grilled skewers of marinated meat, bursting with flavor.</p>
+            </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h1>Our Services</h1>
+      <p>We are committed to providing exceptional service to our guests, whether you're dining in, ordering takeout, or planning a special event.</p>
+      <div class="row">
+         <div class="service-col">
+                <img src="visit.jpg" alt="Dine-In Experience">
+                <h3>Dine-In Experience</h3>
+                <p>Enjoy a delightful dining experience in our cozy and welcoming restaurant.</p>
+            </div>
+            <div class="service-col">
+                <img src="design.jpeg" alt="Takeout Service">
+                <h3>Takeout Service</h3>
+                <p>Order your favorite dishes for takeout and enjoy them at home.</p>
+            </div>
+            <div class="service-col">
+                <img src="catering.webp" alt="Event Catering">
+                <h3>Event Catering</h3>
+                <p>Let us cater your special events with our delicious Swahili dishes.</p>
+            </div>
+      </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+      <h1>Make a Reservation</h1>
+      <p>To ensure the best experience, please make a reservation in advance.</p>
+      <form>
+        <input type="text" placeholder="Your Name" name="name" required aria-label="Your Name" />
+        <input type="email" placeholder="Your Email" name="email" required aria-label="Your Email" />
+        <input type="date" name="date" required aria-label="Reservation Date" />
+        <input type="time" name="time" required aria-label="Reservation Time" />
+        <button type="submit">Reserve Now</button>
+      </form>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h1>Gallery</h1>
+      <p>Explore our vibrant atmosphere and delicious dishes in our gallery.</p>
+      <div class="row">
+           <div class="gallery-col">
+            <img src="Mishkaki.jpg" alt="Gallery Image 1">
+            <div class="layer">
+                <h3>Mishkaki</h3>
+            </div>
+        </div>
+        <div class="gallery-col">
+            <img src="Samaki.jpg" alt="Gallery Image 2">
+            <div class="layer">
+                <h3>Samaki</h3>
+            </div>
+        </div>
+        <div class="gallery-col">
+            <img src="Urojo.jpg" alt="Gallery Image 3">
+            <div class="layer">
+                <h3>Urojo</h3>
+            </div>
+        </div>
+          <div class="gallery-col">
+            <img src="Zege.webp" alt="Gallery Image 4">
+            <div class="layer">
+                <h3>Zege</h3>
+            </div>
+        </div>
+        <div class="gallery-col">
+            <img src="Kachumbari.jpg" alt="Gallery Image 5">
+            <div class="layer">
+                <h3>Kachumbari</h3>
+            </div>
+        </div>
+        <div class="gallery-col">
+            <img src="Beans.jpg" alt="Gallery Image 6">
+            <div class="layer">
+                <h3>Beans</h3>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1>Contact Us</h1>
+      <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+      <a href="mailto:contact@swahilidishes.com" class="hero-btn">Email Us</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h4>About Us</h4>
+    <p>Zainab Swahili Dishes is a distinguished restaurant dedicated to bringing the authentic flavors of Swahili cuisine to your table.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-whatsapp"></i>
+    </div>
+    <iframe src="https://maps.google.com/maps?q=123 Coastal Road, Mombasa&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    <p>Made by Athman Rajab &copy; 2025. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
